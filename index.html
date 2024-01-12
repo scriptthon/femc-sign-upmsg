@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/vite.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <div class="card shadow-card">
+        <div class="card__content">
+          <h1 class="card__content--title">Stay updated!</h1>
+          <p class="card__content--comment">
+            Join 60,000+ product managers receiving monthly <br />
+            updates on:
+          </p>
+          <ul>
+            <li>Product descovery and buuilding what matters</li>
+            <li>Measuring to ensure updates are a succes</li>
+            <li>And much more!</li>
+          </ul>
+          <form style="display: flex; flex-direction: column">
+            <label for="mail"
+              >Email addres <span>Valid mail required</span></label
+            >
+            <input type="text" id="mail" placeholder="email@company.com" />
+            <button type="submit">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <img src="src/images/illustration-sign-up-desktop.svg" alt="" />
+      </div>
+      <div class="card-not shadow-card d-none">
+        <img src="src/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to<br> <b>${msg}</b>. Please open it and click <br> the button inside to confirm your subscription</p>
+        <button>Dissmiss Message</button>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

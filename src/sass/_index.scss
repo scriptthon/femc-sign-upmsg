@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Charcoal-Grey);
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  display: block;
+  border-radius: 7px;
+  padding: 20px;
+}
+input {
+  border: 1px solid var(--Charcoal-Grey);
+}
+button {
+  cursor: pointer;
+  text-align: center;
+}
+
+.shadow-card {
+  box-shadow: 0 20px 60px #0000003d;
+}
+
+.d-none {
+  display: none !important;
+}

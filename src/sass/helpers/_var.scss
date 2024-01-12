@@ -1,0 +1,12 @@
+:root {
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+  --gradientPink: hsl(346, 100%, 66%);
+  --gradientOrange: hsl(14, 100%, 61%);
+  --Tomato: hsla(4, 100%, 67%, 0.7);
+  --gradient: linear-gradient(to right, var(--gradientPink), var(--gradientOrange));
+  --err-bg: hsl(5, 100%, 95%);
+  --err-text: hsl(4, 82%, 64%);
+}

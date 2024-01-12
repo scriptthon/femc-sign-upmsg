@@ -1,0 +1,33 @@
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-not {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 30px;
+  align-items: flex-start;
+  gap: 35px;
+  padding: 60px;
+  background-color: var(--White);
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .card-not {
+    border-radius: 0;
+    height: 100%;
+    img {
+      margin-top: 50px;
+    }
+    button {
+      margin-top: auto;
+    }
+  }
+}

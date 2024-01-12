@@ -1,0 +1,26 @@
+input.err {
+  background-color: var(--err-bg);
+  color: var(--err-text);
+  position: relative;
+  border: 1px solid var(--err-text);
+  outline: 1px solid var(--err-text);
+}
+
+label {
+  display: flex;
+  span {
+    margin-left: auto;
+    color: var(--err-text);
+    display: none;
+  }
+}
+
+label.err {
+  display: flex;
+  span {
+    margin-left: auto;
+    display: block;
+    user-select: none;
+    color: var(--err-text);
+  }
+}
