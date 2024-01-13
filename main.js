@@ -7,6 +7,7 @@ import { checkMail, formErr, thanksWindow } from "./app";
 
 const card = document.querySelector('.card')
 const cardNote = document.querySelector('.card-not')
+const cardNoteParagraph = document.querySelector('#cardNote #msg')
 const cardNoteBtn = document.querySelector('.card-not button')
 const cardBanner = document.querySelector(".card>img");
 const li = document.querySelectorAll(".card li");
@@ -24,6 +25,7 @@ const checking = () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  cardNoteParagraph.innerHTML = `A confirmation email has been sent to<br> <b>${form.mail.value}</b>. Please open it and click <br> the button inside to confirm your subscription`
   checking()
 });
 
